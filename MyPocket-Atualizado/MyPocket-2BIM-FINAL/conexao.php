@@ -1,0 +1,13 @@
+<?php
+$host = '127.0.0.1';
+$db   = 'sistema_crud2';
+$user = 'root';
+$pass = '246800@ROOT';
+
+try {
+    $pdo = new PDO("mysql:host=$host;port=3306;dbname=$db;charset=utf8", $user, $pass);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Erro na conexão: " . $e->getMessage());
+}
+?>
