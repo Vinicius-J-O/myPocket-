@@ -2,7 +2,7 @@
 $host = '127.0.0.1';
 $db   = 'sistema_crud2';
 $user = 'root';
-$pass = '246800@ROOT';
+$pass = '';
 
 try {
     $pdo = new PDO("mysql:host=$host;port=3306;dbname=$db;charset=utf8", $user, $pass);

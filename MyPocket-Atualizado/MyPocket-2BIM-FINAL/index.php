@@ -154,6 +154,45 @@ $metas = $stmtMetas->fetchAll(PDO::FETCH_ASSOC);
         </div>
     </div>
 
+    <div class="card mb-4">
+    <div class="card-body">
+        <h3>Cadastrar Usuário</h3>
+
+        <form action="usuario.php" method="POST">
+
+            <div class="mb-3">
+                <label class="form-label">Nome</label>
+                <input type="text" name="nome" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Sobrenome</label>
+                <input type="text" name="sobrenome" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Nome de usuário</label>
+                <input type="text" name="login" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Senha</label>
+                <input type="password" name="senha" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">
+                Cadastrar Usuário
+            </button>
+
+        </form>
+    </div>
+</div>
+
     <div class="card mb-5">
         <div class="card-body">
             <h3 class="mb-3">Extrato</h3>
